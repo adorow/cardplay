@@ -8,5 +8,8 @@ module Card where
   instance Show Card where
     show (Card number suit) = show number ++ " of " ++ show suit
 
+  data Hand = Hand [Card] deriving (Show, Eq)
+  data Deck = Deck [Card] deriving (Show, Eq)
+
   cardValue :: CardNumber -> Int
   cardValue cardNumber = fromEnum cardNumber + 1
