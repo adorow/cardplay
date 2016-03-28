@@ -6,7 +6,9 @@ module Card where
 
   data Card = Card CardNumber Suit deriving (Eq)
   instance Show Card where
-    show (Card number suit) = show number ++ " of " ++ show suit 
+    show (Card number suit) = show number ++ " of " ++ show suit
 
   cardValue :: CardNumber -> Int
   cardValue cardNumber = fromEnum cardNumber + 1
+
+  test-fail
