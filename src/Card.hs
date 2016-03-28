@@ -10,5 +10,3 @@ module Card where
 
   cardValue :: CardNumber -> Int
   cardValue cardNumber = fromEnum cardNumber + 1
-
-  test-fail
